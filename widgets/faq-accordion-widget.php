@@ -12,7 +12,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
     }
 
     public function get_title() {
-        return __('FAQ Accordion', 'faq-accordion-widget');
+        return __('FAQ Accordion', 'dynamic-faq-accordion-for-elementor');
     }
 
     public function get_icon() {
@@ -28,7 +28,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __('Content', 'faq-accordion-widget'),
+                'label' => __('Content', 'dynamic-faq-accordion-for-elementor'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -36,25 +36,25 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'faq_content',
             [
-                'label' => __('FAQ Content', 'faq-accordion-widget'),
+                'label' => __('FAQ Content', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::WYSIWYG,
                 'default' => "<h2>Question 1</h2><p>Answer to question 1.</p><h2>Question 2</h2><p>Answer to question 2.</p>",
-                'description' => __('Enter your FAQ content with <h2> tags for questions and following content as answers. If empty, content will be pulled from the post\'s FAQ metabox.', 'faq-accordion-widget'),
+                'description' => __('Enter your FAQ content with <h2> tags for questions and following content as answers. If empty, content will be pulled from the post\'s FAQ metabox.', 'dynamic-faq-accordion-for-elementor'),
             ]
         );
 
         $this->add_control(
             'question_title_tag',
             [
-                'label' => __('Title tag', 'faq-accordion-widget'),
+                'label' => __('Title tag', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'h2' => __('H2', 'faq-accordion-widget'),
-                    'h3' => __('H3', 'faq-accordion-widget'),
-                    'h4' => __('H4', 'faq-accordion-widget'),
-                    'h5' => __('H5', 'faq-accordion-widget'),
-                    'h6' => __('H6', 'faq-accordion-widget'),
-                    'div' => __('div', 'faq-accordion-widget'),
+                    'h2' => __('H2', 'dynamic-faq-accordion-for-elementor'),
+                    'h3' => __('H3', 'dynamic-faq-accordion-for-elementor'),
+                    'h4' => __('H4', 'dynamic-faq-accordion-for-elementor'),
+                    'h5' => __('H5', 'dynamic-faq-accordion-for-elementor'),
+                    'h6' => __('H6', 'dynamic-faq-accordion-for-elementor'),
+                    'div' => __('div', 'dynamic-faq-accordion-for-elementor'),
                 ],
                 'default' => 'h3',
             ]
@@ -66,7 +66,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->start_controls_section(
             'style_item_section',
             [
-                'label' => __('Item Style', 'faq-accordion-widget'),
+                'label' => __('Item Style', 'dynamic-faq-accordion-for-elementor'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );        
@@ -75,7 +75,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'item_background_color',
             [
-                'label' => __('Background Color', 'faq-accordion-widget'),
+                'label' => __('Background Color', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .faq-accordion-item' => 'background-color: {{VALUE}};',
@@ -86,14 +86,14 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'item_border_style',
             [
-                'label' => __('Border Style', 'faq-accordion-widget'),
+                'label' => __('Border Style', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'none' => __('None', 'faq-accordion-widget'),
-                    'solid' => __('Solid', 'faq-accordion-widget'),
-                    'dashed' => __('Dashed', 'faq-accordion-widget'),
-                    'dotted' => __('Dotted', 'faq-accordion-widget'),
-                    'double' => __('Double', 'faq-accordion-widget'),
+                    'none' => __('None', 'dynamic-faq-accordion-for-elementor'),
+                    'solid' => __('Solid', 'dynamic-faq-accordion-for-elementor'),
+                    'dashed' => __('Dashed', 'dynamic-faq-accordion-for-elementor'),
+                    'dotted' => __('Dotted', 'dynamic-faq-accordion-for-elementor'),
+                    'double' => __('Double', 'dynamic-faq-accordion-for-elementor'),
                 ],
                 'default' => 'solid',
                 'selectors' => [
@@ -105,7 +105,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'item_border_width',
             [
-                'label' => __('Border Width', 'faq-accordion-widget'),
+                'label' => __('Border Width', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -125,7 +125,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'item_border_color',
             [
-                'label' => __('Border Color', 'faq-accordion-widget'),
+                'label' => __('Border Color', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .faq-accordion-item' => 'border-color: {{VALUE}};',
@@ -139,7 +139,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'item_border_radius',
             [
-                'label' => __('Border Radius', 'faq-accordion-widget'),
+                'label' => __('Border Radius', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -151,7 +151,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_responsive_control(
             'item_padding',
             [
-                'label' => __('Padding', 'faq-accordion-widget'),
+                'label' => __('Padding', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -163,7 +163,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_responsive_control(
             'item_margin',
             [
-                'label' => __('Margin', 'faq-accordion-widget'),
+                'label' => __('Margin', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -181,7 +181,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->start_controls_section(
             'style_question_section',
             [
-                'label' => __('Question Style', 'faq-accordion-widget'),
+                'label' => __('Question Style', 'dynamic-faq-accordion-for-elementor'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -189,7 +189,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'question_background_color',
             [
-                'label' => __('Background Color', 'faq-accordion-widget'),
+                'label' => __('Background Color', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .faq-accordion-item .question-title' => 'background-color: {{VALUE}};',
@@ -200,7 +200,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'question_text_color',
             [
-                'label' => __('Text Color', 'faq-accordion-widget'),
+                'label' => __('Text Color', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .faq-accordion-item .question-title' => 'color: {{VALUE}};',
@@ -212,14 +212,14 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'question_border_style',
             [
-                'label' => __('Border Style', 'faq-accordion-widget'),
+                'label' => __('Border Style', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'none' => __('None', 'faq-accordion-widget'),
-                    'solid' => __('Solid', 'faq-accordion-widget'),
-                    'dashed' => __('Dashed', 'faq-accordion-widget'),
-                    'dotted' => __('Dotted', 'faq-accordion-widget'),
-                    'double' => __('Double', 'faq-accordion-widget'),
+                    'none' => __('None', 'dynamic-faq-accordion-for-elementor'),
+                    'solid' => __('Solid', 'dynamic-faq-accordion-for-elementor'),
+                    'dashed' => __('Dashed', 'dynamic-faq-accordion-for-elementor'),
+                    'dotted' => __('Dotted', 'dynamic-faq-accordion-for-elementor'),
+                    'double' => __('Double', 'dynamic-faq-accordion-for-elementor'),
                 ],
                 'default' => 'solid',
                 'selectors' => [
@@ -231,7 +231,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'question_border_width',
             [
-                'label' => __('Border Width', 'faq-accordion-widget'),
+                'label' => __('Border Width', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -251,7 +251,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'question_border_color',
             [
-                'label' => __('Border Color', 'faq-accordion-widget'),
+                'label' => __('Border Color', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .faq-accordion-item .question-title' => 'border-color: {{VALUE}};',
@@ -265,7 +265,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'question_border_radius',
             [
-                'label' => __('Border Radius', 'faq-accordion-widget'),
+                'label' => __('Border Radius', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -285,7 +285,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_responsive_control(
             'question_padding',
             [
-                'label' => __('Padding', 'faq-accordion-widget'),
+                'label' => __('Padding', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -297,7 +297,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_responsive_control(
             'question_margin',
             [
-                'label' => __('Margin', 'faq-accordion-widget'),
+                'label' => __('Margin', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -312,7 +312,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->start_controls_section(
             'style_answer_section',
             [
-                'label' => __('Answer Style', 'faq-accordion-widget'),
+                'label' => __('Answer Style', 'dynamic-faq-accordion-for-elementor'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -320,7 +320,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'answer_text_color',
             [
-                'label' => __('Text Color', 'faq-accordion-widget'),
+                'label' => __('Text Color', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .faq-accordion-content' => 'color: {{VALUE}};',
@@ -331,7 +331,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'answer_background_color',
             [
-                'label' => __('Background Color', 'faq-accordion-widget'),
+                'label' => __('Background Color', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .faq-accordion-content' => 'background-color: {{VALUE}};',
@@ -342,14 +342,14 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'answer_border_style',
             [
-                'label' => __('Border Style', 'faq-accordion-widget'),
+                'label' => __('Border Style', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'none' => __('None', 'faq-accordion-widget'),
-                    'solid' => __('Solid', 'faq-accordion-widget'),
-                    'dashed' => __('Dashed', 'faq-accordion-widget'),
-                    'dotted' => __('Dotted', 'faq-accordion-widget'),
-                    'double' => __('Double', 'faq-accordion-widget'),
+                    'none' => __('None', 'dynamic-faq-accordion-for-elementor'),
+                    'solid' => __('Solid', 'dynamic-faq-accordion-for-elementor'),
+                    'dashed' => __('Dashed', 'dynamic-faq-accordion-for-elementor'),
+                    'dotted' => __('Dotted', 'dynamic-faq-accordion-for-elementor'),
+                    'double' => __('Double', 'dynamic-faq-accordion-for-elementor'),
                 ],
                 'default' => 'solid',
                 'selectors' => [
@@ -361,7 +361,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'answer_border_width',
             [
-                'label' => __('Border Width', 'faq-accordion-widget'),
+                'label' => __('Border Width', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -381,7 +381,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'answer_border_color',
             [
-                'label' => __('Border Color', 'faq-accordion-widget'),
+                'label' => __('Border Color', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .faq-accordion-content' => 'border-color: {{VALUE}};',
@@ -395,7 +395,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_control(
             'answer_border_radius',
             [
-                'label' => __('Border Radius', 'faq-accordion-widget'),
+                'label' => __('Border Radius', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -415,7 +415,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_responsive_control(
             'answer_padding',
             [
-                'label' => __('Padding', 'faq-accordion-widget'),
+                'label' => __('Padding', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -427,7 +427,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         $this->add_responsive_control(
             'answer_margin',
             [
-                'label' => __('Margin', 'faq-accordion-widget'),
+                'label' => __('Margin', 'dynamic-faq-accordion-for-elementor'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -455,7 +455,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
         // اگر هیچ محتوایی وجود نداشته باشد
         if (empty(trim($faq_content))) {
             if (\Elementor\Plugin::$instance->editor->is_edit_mode()) {
-                echo '<p>' . __('No FAQ content found. Please add content in the widget or in the post metabox.', 'faq-accordion-widget') . '</p>';
+                echo '<p>' . __('No FAQ content found. Please add content in the widget or in the post metabox.', 'dynamic-faq-accordion-for-elementor') . '</p>';
             } else {
                 echo ''; // در حالت غیرویرایش، متن خالی
             }
@@ -468,7 +468,7 @@ class FAQ_Accordion_Widget extends Widget_Base {
 
         if (empty($matches)) {
             if (\Elementor\Plugin::$instance->editor->is_edit_mode()) {
-                echo '<p>' . __('No valid FAQ content found. Please use h2 tags for questions.', 'faq-accordion-widget') . '</p>';
+                echo '<p>' . __('No valid FAQ content found. Please use h2 tags for questions.', 'dynamic-faq-accordion-for-elementor') . '</p>';
             } else {
                 echo ''; // در حالت غیرویرایش، متن خالی
             }

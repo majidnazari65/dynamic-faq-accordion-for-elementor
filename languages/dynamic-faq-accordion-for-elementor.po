@@ -1,0 +1,173 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DYNAMIC FAQ Accordion Widget For Elementor 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-06 19:46+0400\n"
+"PO-Revision-Date: 2025-06-06 19:46+0400\n"
+"Last-Translator: Your Name\n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: faq-accordion-widget.php:45
+msgid "Elementor must be installed and active for FAQ Accordion Widget to work."
+msgstr "المنتور باید نصب و فعال باشد تا ویجت آکاردئون FAQ کار کند."
+
+#: widgets/faq-accordion-widget.php:35
+msgid "FAQ Accordion"
+msgstr "آکاردئون سوالات متداول"
+
+#: widgets/faq-accordion-widget.php:48
+msgid "Content"
+msgstr "محتوا"
+
+#: widgets/faq-accordion-widget.php:54
+msgid "FAQ Content"
+msgstr "محتوای سوالات متداول"
+
+#: widgets/faq-accordion-widget.php:56
+msgid "Enter your FAQ content with <h2> tags for questions and following content as answers. If empty, content will be pulled from the post's FAQ metabox."
+msgstr "محتوای سوالات متداول را با تگ‌های <h2> برای سوالات و محتوای زیر آن برای پاسخ‌ها وارد کنید. اگر خالی باشد، محتوا از متاباکس پست دریافت می‌شود."
+
+#: widgets/faq-accordion-widget.php:65
+msgid "Question Style"
+msgstr "استایل سوال"
+
+#: widgets/faq-accordion-widget.php:71
+msgid "Text Color"
+msgstr "رنگ متن"
+
+#: widgets/faq-accordion-widget.php:81
+msgid "Background Color"
+msgstr "رنگ پس‌زمینه"
+
+#: widgets/faq-accordion-widget.php:91
+msgid "Border Style"
+msgstr "نوع حاشیه"
+
+#: widgets/faq-accordion-widget.php:95
+msgid "None"
+msgstr "هیچ‌کدام"
+
+#: widgets/faq-accordion-widget.php:96
+msgid "Solid"
+msgstr "یکپارچه"
+
+#: widgets/faq-accordion-widget.php:97
+msgid "Dashed"
+msgstr "خط‌چین"
+
+#: widgets/faq-accordion-widget.php:98
+msgid "Dotted"
+msgstr "نقطه‌چین"
+
+#: widgets/faq-accordion-widget.php:99
+msgid "Double"
+msgstr "دوخطه"
+
+#: widgets/faq-accordion-widget.php:108
+msgid "Border Width"
+msgstr "ضخامت حاشیه"
+
+#: widgets/faq-accordion-widget.php:124
+msgid "Border Color"
+msgstr "رنگ حاشیه"
+
+#: widgets/faq-accordion-widget.php:137
+msgid "Border Radius"
+msgstr "شعاع حاشیه"
+
+#: widgets/faq-accordion-widget.php:150
+msgid "Typography"
+msgstr "تایپوگرافی"
+
+#: widgets/faq-accordion-widget.php:159
+msgid "Padding"
+msgstr "فاصله داخلی"
+
+#: widgets/faq-accordion-widget.php:171
+msgid "Margin"
+msgstr "فاصله خارجی"
+
+#: widgets/faq-accordion-widget.php:185
+msgid "Answer Style"
+msgstr "استایل پاسخ"
+
+#: widgets/faq-accordion-widget.php:191
+msgid "Text Color"
+msgstr "رنگ متن"
+
+#: widgets/faq-accordion-widget.php:201
+msgid "Background Color"
+msgstr "رنگ پس‌زمینه"
+
+#: widgets/faq-accordion-widget.php:211
+msgid "Border Style"
+msgstr "نوع حاشیه"
+
+#: widgets/faq-accordion-widget.php:215
+msgid "None"
+msgstr "هیچ‌کدام"
+
+#: widgets/faq-accordion-widget.php:216
+msgid "Solid"
+msgstr "یکپارچه"
+
+#: widgets/faq-accordion-widget.php:217
+msgid "Dashed"
+msgstr "خط‌چین"
+
+#: widgets/faq-accordion-widget.php:218
+msgid "Dotted"
+msgstr "نقطه‌چین"
+
+#: widgets/faq-accordion-widget.php:219
+msgid "Double"
+msgstr "دوخطه"
+
+#: widgets/faq-accordion-widget.php:228
+msgid "Border Width"
+msgstr "ضخامت حاشیه"
+
+#: widgets/faq-accordion-widget.php:244
+msgid "Border Color"
+msgstr "رنگ حاشیه"
+
+#: widgets/faq-accordion-widget.php:257
+msgid "Border Radius"
+msgstr "شعاع حاشیه"
+
+#: widgets/faq-accordion-widget.php:270
+msgid "Typography"
+msgstr "تایپوگرافی"
+
+#: widgets/faq-accordion-widget.php:279
+msgid "Padding"
+msgstr "فاصله داخلی"
+
+#: widgets/faq-accordion-widget.php:291
+msgid "Margin"
+msgstr "فاصله خارجی"
+
+#: widgets/faq-accordion-widget.php:313
+msgid "No FAQ content found. Please add content in the widget or in the post metabox."
+msgstr "محتوای سوالات متداول یافت نشد. لطفاً محتوا را در ویجت یا متاباکس پست اضافه کنید."
+
+#: widgets/faq-accordion-widget.php:320
+msgid "No valid FAQ content found. Please use <h2> tags for questions."
+msgstr "محتوای معتبر سوالات متداول یافت نشد. لطفاً از تگ‌های <h2> برای سوالات استفاده کنید."
+
+#: faq-accordion-widget.php:74
+msgid "FAQ Content"
+msgstr "محتوای سوالات متداول"
+
+msgid "A custom Elementor widget to create an FAQ accordion from text input, with a metabox for FAQ content."
+msgstr "یک ویجت المنتور که از محتوای متاباکس یا محتوای داده شده در ویجت، آکاردئون پرسش و پاسخ تولید میکند. "
+
+msgid "DYNAMIC FAQ Accordion Widget For Elementor"
+msgstr "ویجت المنتور پرسش و پاسخ آکاردئون داینامیک"
+

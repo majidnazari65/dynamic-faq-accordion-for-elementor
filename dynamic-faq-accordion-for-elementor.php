@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: FAQ Accordion Elementor Widget
+ * Plugin Name: DYNAMIC FAQ Accordion Widget For Elementor
  * Description: A custom Elementor widget to create an FAQ accordion from text input, with a metabox for FAQ content.
  * Version: 1.0.0
  * Author: Your Name
@@ -10,6 +10,13 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
+/**
+ * Load plugin text domain for translations
+ */
+function faq_accordion_widget_load_textdomain() {
+    load_plugin_textdomain('dynamic-faq-accordion-for-elementor', false, dirname(plugin_basename(__FILE__)) . '/languages');
+}
+add_action('plugins_loaded', 'faq_accordion_widget_load_textdomain');
 
 /**
  * Register Elementor Widget
@@ -24,7 +31,7 @@ add_action('elementor/widgets/register', 'register_faq_accordion_widget');
  * Enqueue styles and scripts
  */
 function faq_accordion_widget_scripts() {
-    wp_enqueue_style('faq-accordion-widget', plugins_url('/assets/css/faq-accordion.css', __FILE__));
+    wp_enqueue_style('dynamic-faq-accordion-for-elementor', plugins_url('/assets/css/faq-accordion.css', __FILE__));
 }
 add_action('wp_enqueue_scripts', 'faq_accordion_widget_scripts');
 
@@ -34,7 +41,7 @@ add_action('wp_enqueue_scripts', 'faq_accordion_widget_scripts');
 function faq_accordion_widget_dependencies() {
     if (!did_action('elementor/loaded')) {
         add_action('admin_notices', function() {
-            echo '<div class="notice notice-error"><p>' . __('Elementor must be installed and active for FAQ Accordion Widget to work.', 'faq-accordion-widget') . '</p></div>';
+            echo '<div class="notice notice-error"><p>' . __('Elementor must be installed and active for FAQ Accordion Widget to work.', 'dynamic-faq-accordion-for-elementor') . '</p></div>';
         });
         return;
     }
@@ -47,7 +54,7 @@ function add_faq_metabox() {
     foreach ($post_types as $post_type) {
         add_meta_box(
             'faq_metabox', // ID متاباکس
-            __('FAQ Content', 'faq-accordion-widget'), // عنوان متاباکس
+            __('FAQ Content', 'dynamic-faq-accordion-for-elementor'), // عنوان متاباکس
             'display_faq_metabox', // callback برای نمایش محتوا
             $post_type, // پست تایپ
             'normal', // موقعیت (normal, side, advanced)
