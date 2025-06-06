@@ -1,0 +1,43 @@
+.faq-accordion {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.faq-accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.faq-toggle {
+    display: none;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.faq-question .question-title {
+    margin: 0;
+    padding:15px;
+    font-size: 1.2em;
+    border: 1px solid transparent; /* برای اطمینان از اعمال حاشیه */
+}
+
+.faq-accordion-content {
+    max-height: 0;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+    border: 1px solid transparent; /* برای اطمینان از اعمال حاشیه */
+}
+
+.faq-toggle:checked + .faq-question + .faq-accordion-content {
+    max-height: 1000px; /* قابل تنظیم */
+    padding: 15px;
+    display: block;
+}
