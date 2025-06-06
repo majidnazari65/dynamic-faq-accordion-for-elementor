@@ -17,9 +17,8 @@
 
 ### نصب
 1. افزونه را از این مخزن کلون کنید و به فایل زیپ تبدیل کنید یا مستقیما از [این لینک](https://github.com/majidnazari65/dynamic-faq-accordion-for-elementor/archive/refs/heads/main.zip) فایل زیپ را دانلود نمایید.
-2. 
-3. از پنل مدیریت وردپرس، افزونه را فعال کنید.
-4. اطمینان حاصل کنید که المنتور روی سایت شما نصب و فعال است.
+2. از پنل مدیریت وردپرس، افزونه را نصب فعال کنید.
+3. اطمینان حاصل کنید که المنتور روی سایت شما نصب و فعال است.
 
 ### استفاده
 1. **تنظیم متاباکس**:
@@ -59,10 +58,9 @@ The **DYNAMIC FAQ Accordion Widget For Elementor** is a WordPress plugin that cr
 - **Edit Mode Handling**: Displays error messages in Elementor’s editor if content is missing; shows nothing on the frontend.
 
 ### Installation
-1. Copy the plugin files to the `wp-content/plugins/faq-accordion-widget` directory.
-2. Clone this repository and zip it or [download zip file](https://github.com/majidnazari65/dynamic-faq-accordion-for-elementor/archive/refs/heads/main.zip) directly.
-3. Activate the plugin from the WordPress admin panel.
-4. Ensure Elementor is installed and active on your site.
+1. Clone this repository and zip it or [download zip file](https://github.com/majidnazari65/dynamic-faq-accordion-for-elementor/archive/refs/heads/main.zip) directly.
+2. Install and Activate the plugin from the WordPress admin panel.
+3. Ensure Elementor is installed and active on your site.
 
 ### Usage
 1. **Metabox Setup**:
