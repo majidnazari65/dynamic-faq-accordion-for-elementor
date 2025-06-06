@@ -3,7 +3,7 @@
  * Plugin Name: DYNAMIC FAQ Accordion Widget For Elementor
  * Description: A custom Elementor widget to create an FAQ accordion from text input, with a metabox for FAQ content.
  * Version: 1.0.0
- * Author: Your Name
+ * Author: AnilTarah.com
  * License: GPL-2.0+
  */
 

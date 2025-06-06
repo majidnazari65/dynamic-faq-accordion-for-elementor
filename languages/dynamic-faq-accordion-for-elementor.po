@@ -166,8 +166,7 @@ msgid "FAQ Content"
 msgstr "محتوای سوالات متداول"
 
 msgid "A custom Elementor widget to create an FAQ accordion from text input, with a metabox for FAQ content."
-msgstr "یک ویجت المنتور که از محتوای متاباکس یا محتوای داده شده در ویجت، آکاردئون پرسش و پاسخ تولید میکند. "
+msgstr "یک ویجت المنتور که از محتوای متاباکس یا محتوای داده شده در ویجت، آکاردئون پرسش و پاسخ تولید میکند."
 
 msgid "DYNAMIC FAQ Accordion Widget For Elementor"
 msgstr "ویجت المنتور پرسش و پاسخ آکاردئون داینامیک"
-
